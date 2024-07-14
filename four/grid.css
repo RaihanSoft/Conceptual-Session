@@ -1,0 +1,37 @@
+.container{
+    
+    display: grid;
+
+    align-items: center;
+    justify-items: center;
+
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 150px 150px;
+    border: 2px solid red;
+    padding: 50px;
+}
+.box{
+    border: 2px solid black;
+    /* height: 50px; */
+
+}
+
+.box:nth-child(even){
+    background-color: red;
+}
+.box:nth-child(odd){
+    background-color: greenyellow;
+}
+.box-1{
+    justify-self: center;
+    align-self: center;
+}
+.box-2{
+
+    align-self: center;
+    justify-self: center;
+}
+.box-5{
+justify-self: end;
+align-self:start;
+}
